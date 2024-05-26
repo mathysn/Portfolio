@@ -1,5 +1,13 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
@@ -7,7 +15,7 @@ nav {
     height: 65px;
     width: 100vw;
     background-color: var(--color-light);
-    box-shadow: 0 0 30px rgba(238, 238, 238, 0.3);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
     z-index: 999;
 }
 
@@ -61,7 +69,7 @@ nav {
     align-items: center;
 }
 
-.content {
+.intro-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,11 +77,84 @@ nav {
     text-shadow: 0 0 3px var(--color-secondary);
 }
 
-.content h1 {
-    font-size: 3rem;
+.intro-content h1 {
+    font-size: 2.8rem;
     margin-bottom: 0.2rem;
 }
 
-.content h2 {
-    font-size: 1.8rem;
+.intro-content h2 {
+    font-size: 1.6rem;
+}
+
+.intro-scroll-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-scroll-down a {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-light);
+    font-size: 3.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.intro-scroll-down a:hover {
+    background-color: rgba(64, 165, 120, 0.2);
+    box-shadow: 0 0 10px rgba(64, 165, 120, 0.2);
+}
+
+
+.about-container {
+    margin: 0 auto;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-card {
+    margin: 4rem;
+    width: 80%;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-light);
+    width: fit-content;
+}
+
+.title-underline {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-secondary);
+}
+
+.about-card-content {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--color-light);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.about-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+    width: fit-content;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: var(--color-dark);
+
 }
