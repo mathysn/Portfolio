@@ -1,0 +1,49 @@
+.intro-container {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-light);
+    text-shadow: 0 0 3px var(--color-secondary);
+}
+
+.intro-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.intro-content h2 {
+    font-size: 1.6rem;
+}
+
+.intro-scroll-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-scroll-down a {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-light);
+    font-size: 3.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.intro-scroll-down a:hover {
+    background-color: rgba(64, 165, 120, 0.2);
+    box-shadow: 0 0 10px rgba(64, 165, 120, 0.2);
+}
