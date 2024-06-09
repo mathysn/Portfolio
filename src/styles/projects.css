@@ -57,6 +57,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+    margin-right: 0.5rem;
 }
 
 .project-card-action-btn > iconify-icon {
