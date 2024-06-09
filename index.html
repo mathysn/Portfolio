@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="stylesheet" href="src/css/variables.css">
-  <link rel="stylesheet" href="src/css/navbar.css">
-  <link rel="stylesheet" href="src/css/stars.css">
-  <link rel="stylesheet" href="src/css/intro.css">
-  <link rel="stylesheet" href="src/css/about.css">
-  <link rel="stylesheet" href="src/css/projects.css">
+  <link rel="stylesheet" href="src/styles/variables.css">
+  <link rel="stylesheet" href="src/styles/navbar.css">
+  <link rel="stylesheet" href="src/styles/stars.css">
+  <link rel="stylesheet" href="src/styles/intro.css">
+  <link rel="stylesheet" href="src/styles/about.css">
+  <link rel="stylesheet" href="src/styles/projects.css">
 
-  <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
   <title>Mathys NOURRY - Portfolio</title>
 </head>
@@ -39,7 +39,7 @@
     <h2 class="montserrat-light">Étudiant en Informatique</h2>
   </div>
   <div class="intro-scroll-down">
-    <a href="#a-propos"><span class="iconify" data-icon="mdi-chevron-down"></span></a>
+    <a href="#a-propos"><iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
   </div>
 </div>
 
@@ -84,42 +84,69 @@
 
 <!-- Projets -->
 <div id="projets" class="project-container">
-  <div class="project-card">
-    <div class="title">
-      <h2 class="montserrat-semibold">Projets</h2>
-    </div>
-    <div class="project-card-content">
-      <div class="subtitle">
-        <h3 class="montserrat-semibold">Projet 1</h3>
-        <div class="title-underline"></div>
-      </div>
+  <div class="title">
+    <h2 class="montserrat-semibold">Projets</h2>
+  </div>
 
-      <p class="montserrat-medium">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid.
-      </p>
+  <div class="project-card-container">
+    <div class="project-card">
+      <div class="project-card-content">
+        <div class="subtitle">
+          <h3 class="montserrat-semibold">SAE - EZCON</h3>
+          <div class="title-underline"></div>
+        </div>
+
+        <p class="project-card-description montserrat-medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum! Provident similique accusantium nemo autem.
+        </p>
+
+        <div class="project-card-actions">
+          <a href="https://github.com/SunoWhere/Chokbar-Project" target="_blank" class="project-card-action-btn"><iconify-icon icon="mdi:github"></iconify-icon> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-content">
+        <div class="subtitle">
+          <h3 class="montserrat-semibold">Heroes and Villains</h3>
+          <div class="title-underline"></div>
+        </div>
+
+        <p class="project-card-description montserrat-medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum! Provident similique accusantium nemo autem.
+        </p>
+
+        <div class="project-card-actions">
+          <a href="https://github.com/Lucas-Da-Silveira/MetroBoomin" target="_blank" class="project-card-action-btn"><iconify-icon icon="mdi:github"></iconify-icon> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-content">
+        <div class="subtitle">
+          <h3 class="montserrat-semibold">More Pickaxes Mod</h3>
+          <div class="title-underline"></div>
+        </div>
+
+        <p class="project-card-description montserrat-medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum! Provident similique accusantium nemo autem.
+        </p>
+
+        <div class="project-card-actions">
+          <a href="https://github.com/mathysn/Fabric-MorePickaxes-1.20.1" target="_blank" class="project-card-action-btn"><iconify-icon icon="mdi:github"></iconify-icon> GitHub</a>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card-content">
-      <div class="subtitle">
-        <h3 class="montserrat-semibold">Projet 2</h3>
-        <div class="title-underline"></div>
-      </div>
-      <p class="montserrat-medium">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid.
-      </p>
-    </div>
   </div>
 </div>
 </body>

@@ -1,0 +1,72 @@
+.project-container {
+    margin: auto;
+    min-height: calc(100vh - 85px);
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.project-card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-card {
+    width: 40%;
+    margin: 0 20px;
+    padding: 1.5rem;
+    background-color: var(--color-light);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.project-card:first-child {
+    margin-left: 0;
+}
+
+.project-card:last-child {
+    margin-right: 0;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-description {
+    text-align: justify;
+}
+
+.project-card-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.project-card-action-btn {
+    display: flex;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.project-card-action-btn > iconify-icon {
+    font-size: 24px;
+    margin-right: 0.3rem;
+}
+
+.project-card-action-btn:hover {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
+}
+
