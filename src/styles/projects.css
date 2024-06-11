@@ -16,7 +16,7 @@
 .project-card {
     width: 40%;
     margin: 0 20px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: var(--color-light);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -43,7 +43,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 0.5rem;
 }
 
 .project-card-action-btn {
@@ -58,6 +57,11 @@
     cursor: pointer;
     transition: all 0.3s;
     margin-right: 0.5rem;
+}
+
+.project-card-action-btn > p {
+    display: flex;
+    align-items: center;
 }
 
 .project-card-action-btn > iconify-icon {
