@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="src/styles/stars.css">
   <link rel="stylesheet" href="src/styles/intro.css">
   <link rel="stylesheet" href="src/styles/about.css">
+  <link rel="stylesheet" href="src/styles/skills.css">
   <link rel="stylesheet" href="src/styles/projects.css">
 
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-  <title>Mathys NOURRY - Portfolio</title>
+  <title>Mathys NOURRY</title>
 </head>
 <body>
 <nav>
   <ul class="nav-links montserrat-medium">
     <li class="nav-link"><a href="#a-propos">À propos</a></li>
+    <li class="nav-link"><a href="#competences">Compétences</a></li>
     <li class="nav-link"><a href="#projets">Projets</a></li>
     <li class="nav-link"><a href="#">Stage</a></li>
     <li class="nav-link"><a href="#">Contact</a></li>
@@ -39,7 +41,9 @@
     <h2 class="montserrat-light">Étudiant en Informatique</h2>
   </div>
   <div class="intro-scroll-down">
-    <a href="#a-propos"><iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+    <a href="#a-propos">
+      <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+    </a>
   </div>
 </div>
 
@@ -82,6 +86,90 @@
   </div>
 </div>
 
+<div id="competences" class="skills-container">
+  <div class="skills-card">
+    <div class="title">
+      <h2 class="montserrat-semibold">Compétences</h2>
+    </div>
+
+    <div class="skills-card-line">
+      <div class="skills-card-content">
+        <div class="subtitle">
+          <h3 class="montserrat-semibold">Développement Web</h3>
+          <div class="title-underline"></div>
+        </div>
+        <div class="skills-column-container">
+          <div class="skills">
+            <div onclick="window.open('https://developer.mozilla.org/fr/docs/Web/HTML', '_blank')" class="skill">
+              <iconify-icon icon="mdi:language-html5"></iconify-icon>
+              <p class="montserrat-regular skill-name">HTML</p>
+            </div>
+            <div onclick="window.open('https://developer.mozilla.org/fr/docs/Web/CSS', '_blank')" class="skill">
+              <iconify-icon icon="mdi:language-css3"></iconify-icon>
+              <p class="montserrat-regular skill-name">CSS</p>
+            </div>
+            <div onclick="window.open('https://developer.mozilla.org/fr/docs/Web/JavaScript', '_blank')" class="skill">
+              <iconify-icon icon="mdi:language-javascript"></iconify-icon>
+              <p class="montserrat-regular skill-name">JavaScript</p>
+            </div>
+          </div>
+          <div class="skills">
+            <div onclick="window.open('https://nodejs.org/en', '_blank')" class="skill">
+              <iconify-icon icon="mdi:nodejs"></iconify-icon>
+              <p class="montserrat-regular skill-name">Node.js</p>
+            </div>
+            <div onclick="window.open('https://vuejs.org/', '_blank')" class="skill">
+              <iconify-icon icon="mdi:vuejs"></iconify-icon>
+              <p class="montserrat-regular skill-name">Vue</p>
+            </div>
+            <div onclick="window.open('https://react.dev/', '_blank')" class="skill">
+              <iconify-icon icon="mdi:react"></iconify-icon>
+              <p class="montserrat-regular skill-name">React</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card-content">
+        <div class="subtitle">
+          <h3 class="montserrat-semibold">Frameworks & Outils</h3>
+          <div class="title-underline"></div>
+        </div>
+        <div class="skills-column-container">
+          <div class="skills">
+            <div onclick="window.open('https://vuetifyjs.com/en/', '_blank')" class="skill">
+              <iconify-icon icon="mdi:vuetify"></iconify-icon>
+              <p class="montserrat-regular skill-name">Vuetify</p>
+            </div>
+            <div onclick="window.open('https://developer.mozilla.org/fr/docs/Glossary/SQL', '_blank')" class="skill">
+              <iconify-icon icon="mdi:sql-query"></iconify-icon>
+              <p class="montserrat-regular skill-name">SQL</p>
+            </div>
+            <div onclick="window.open('https://code.visualstudio.com/', '_blank')" class="skill">
+              <iconify-icon icon="mdi:vs-code"></iconify-icon>
+              <p class="montserrat-regular skill-name">VSCode</p>
+            </div>
+          </div>
+          <div class="skills">
+            <div onclick="window.open('https://mui.com/', '_blank')" class="skill">
+              <iconify-icon icon="simple-icons:mui"></iconify-icon>
+              <p class="montserrat-regular skill-name">MUI</p>
+            </div>
+            <div onclick="window.open('https://www.git-scm.com/', '_blank')" class="skill">
+              <iconify-icon icon="mdi:git"></iconify-icon>
+              <p class="montserrat-regular skill-name">Git</p>
+            </div>
+            <div onclick="window.open('https://www.jetbrains.com/', '_blank')" class="skill">
+              <iconify-icon icon="cib:jetbrains"></iconify-icon>
+              <p class="montserrat-regular skill-name">JetBrains</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Projets -->
 <div id="projets" class="project-container">
   <div class="title">
@@ -104,8 +192,12 @@
         </p>
 
         <div class="project-card-actions">
-          <a href="#" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:plus"></iconify-icon><p>Plus d'info</p></a>
-          <a href="https://github.com/SunoWhere/Chokbar-Project" target="_blank" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:github"></iconify-icon><p>GitHub</p></a>
+          <a href="#" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:plus"></iconify-icon>
+            <p>Plus d'info</p></a>
+          <a href="https://github.com/SunoWhere/Chokbar-Project" target="_blank" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+            <p>GitHub</p></a>
         </div>
       </div>
     </div>
@@ -124,8 +216,12 @@
         </p>
 
         <div class="project-card-actions">
-          <a href="#" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:plus"></iconify-icon><p>Plus d'info</p></a>
-          <a href="https://github.com/Lucas-Da-Silveira/MetroBoomin" target="_blank" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:github"></iconify-icon><p>GitHub</p></a>
+          <a href="#" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:plus"></iconify-icon>
+            <p>Plus d'info</p></a>
+          <a href="https://github.com/Lucas-Da-Silveira/MetroBoomin" target="_blank" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+            <p>GitHub</p></a>
         </div>
       </div>
     </div>
@@ -144,12 +240,15 @@
         </p>
 
         <div class="project-card-actions">
-          <a href="#" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:plus"></iconify-icon><p>Plus d'info</p></a>
-          <a href="https://github.com/mathysn/Fabric-MorePickaxes-1.20.1" target="_blank" class="project-card-action-btn montserrat-regular"><iconify-icon icon="mdi:github"></iconify-icon><p>GitHub</p></a>
+          <a href="#" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:plus"></iconify-icon>
+            <p>Plus d'info</p></a>
+          <a href="https://github.com/mathysn/Fabric-MorePickaxes-1.20.1" target="_blank" class="project-card-action-btn montserrat-regular">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+            <p>GitHub</p></a>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 </body>
