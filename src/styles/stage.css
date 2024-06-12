@@ -1,4 +1,4 @@
-.project-container {
+.stage-container {
     padding-top: calc(65px + 30px);
     margin: auto;
     max-width: 80%;
@@ -8,49 +8,35 @@
     justify-content: start;
 }
 
-.project-card-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.project-card {
-    width: 40%;
-    min-height: 350px;
-    margin: 0 20px;
+.stage-card {
+    width: 100%;
+    position: relative;
     padding: 1.2rem;
     background-color: var(--color-light);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
-.project-card:first-child {
-    margin-left: 0;
-}
-
-.project-card:last-child {
-    margin-right: 0;
-}
-
-.project-card-content {
+.stage-card-content {
     display: flex;
-    position: relative;
     flex-direction: column;
     height: 100%;
+    margin-bottom: 4rem;
 }
 
-.project-card-description {
+.stage-card-description {
     text-align: justify;
 }
 
-.project-card-actions {
+.stage-card-actions {
     position: absolute;
-    bottom: 0;
+    bottom: 1.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.project-card-action-btn {
+.stage-card-action-btn {
     display: flex;
     text-decoration: none;
     margin-top: 1rem;
@@ -61,23 +47,21 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-    margin-right: 0.5rem;
 }
 
-.project-card-action-btn > p {
+.stage-card-action-btn > p {
     display: flex;
     align-items: center;
 }
 
-.project-card-action-btn > iconify-icon {
+.stage-card-action-btn > iconify-icon {
     font-size: 24px;
     margin-right: 0.3rem;
 }
 
-.project-card-action-btn:hover {
+.stage-card-action-btn:hover {
     color: var(--color-light);
     background-color: var(--color-primary);
     box-shadow: 0 0 20px var(--color-primary);
     transform: translateY(-3px);
 }
-

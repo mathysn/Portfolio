@@ -1,0 +1,10 @@
+.footer {
+    margin-top: 150px;
+    height: 300px;
+    background-color: var(--color-light);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    color: var(--color-dark);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
