@@ -50,11 +50,20 @@
   text-align: justify;
 }
 
+.stage-content > ul {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+}
+
+.stage-content > ul > li {
+  margin: 0.5rem 0;
+}
+
 .stage-content-images {
   width: 85%;
   margin: 0 auto 4.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .row.stage-content-withimage > .stage-content {
