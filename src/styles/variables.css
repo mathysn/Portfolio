@@ -87,3 +87,17 @@ html {
     color: var(--color-dark);
     width: fit-content;
 }
+
+.text-link {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 var(--color-primary);
+    color: var(--color-primary);
+    margin: 0 -.1rem;
+    padding: 0 .1rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.text-link:hover {
+    box-shadow: inset 100px 0 0 0 var(--color-primary);
+    color: white;
+}

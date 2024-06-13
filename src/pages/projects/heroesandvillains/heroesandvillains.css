@@ -1,0 +1,122 @@
+.heroesandvillains-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: calc(65px + 30px);
+}
+
+.heroesandvillains-container > img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto 4.5rem;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.row > .title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.row > .title > h3 {
+  font-size: 1.2rem;
+  color: var(--color-light);
+  width: fit-content;
+}
+
+.row.heroesandvillains-content-withimage {
+  width: 85%;
+  margin: 0 auto 4.5rem;
+}
+
+.heroesandvillains-btn {
+  width: fit-content;
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.6rem;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 0.5rem;
+  font-size: 24px;
+}
+
+.heroesandvillains-btn > p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.heroesandvillains-btn > iconify-icon {
+  font-size: 24px;
+  margin-right: 0.3rem;
+}
+
+.heroesandvillains-btn:hover {
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.heroesandvillains-content {
+  width: 85%;
+  padding: 1.2rem;
+  background-color: var(--color-light);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 0 auto 4.5rem;
+}
+
+.heroesandvillains-content > ul {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+}
+
+.heroesandvillains-content > ul > li {
+  margin: 0.5rem 0;
+}
+
+.heroesandvillains-description {
+  text-align: justify;
+}
+
+.heroesandvillains-content-images {
+  width: 85%;
+  margin: 0 auto 4.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.row.heroesandvillains-content-withimage > .heroesandvillains-content {
+  width: 50%;
+  margin: 0;
+}
+
+.image > img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.image > p {
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+.image:first-child {
+  margin-right: 1.2rem;
+}
+
+.image:last-child {
+  margin-left: 1.2rem;
+}
